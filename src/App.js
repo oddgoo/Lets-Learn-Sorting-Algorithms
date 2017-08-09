@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BubbleSort from './BubbleSort.js';
-import Introduction from './Introduction.js';
+import BubbleSort from './Pages/BubbleSort/index.js';
+import Introduction from './Pages/Introduction/index.js';
 
 
 class App extends Component {
@@ -11,10 +11,10 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Ordenamiento de Datos</h2>
         </div>
         <p className="App-intro">
-          T <code>src/App.js</code> and save to reload.
+          <code>src/App.js</code>
           <Introduction/>
           <BubbleSort/>
         </p>
