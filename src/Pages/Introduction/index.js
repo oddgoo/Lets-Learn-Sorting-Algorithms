@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
+import Section from '../../Components/Section/index.js'
+
+import Card3D from './Components/CardColors/index.js'
+import CardAlphabet from './Components/CardAlphabet/index.js'
+import CardBinarySearch from './Components/CardBinarySearch/index.js'
+import CardColors from './Components/CardColors/index.js'
+import CardDates from './Components/CardDates/index.js'
+import CardDeck from './Components/CardDeck/index.js'
+import CardDuplicates from './Components/CardDuplicates/index.js'
+import CardSizes from './Components/CardSizes/index.js'
+
+
+import './index.css'
+
 
 class Introduction extends Component {
     render() {
         return (
-            <div className="Section">
+            <Section>
                 <h1>Introducción</h1>
 
                 <p>
@@ -24,18 +38,18 @@ class Introduction extends Component {
                     En éstos tiempos, la mayoría de los lenguajes y herramientas que utilizamos para crear programas y sistemas ya cuentan con funciones para ordenar elementos, por lo que es raramente necesario o incluso adecuado crear tu propio código o implementaciones de los algoritmos. Sin embargo, entender los algoritmos, y los conceptos que los rodean, es la diferencia entre un Chef, y alguien que simplemente sigue una receta.
 
                     Veamos algunos de los usos
-
-                    Fechas
-                    Partículas / 3D
-                    Colores / Opacidad
-                    Baraja
-                    tamaños
-                    Ordenamiento alfabético
-                    Busqueda binaria
-                    Búsqueda de duplicados
-                    La posición de un elemento en la lista
                 </p>
 
+                <div className="examplesContainer">
+                    <CardDates />
+                    <CardColors />
+                    <Card3D />
+                    <CardDeck />
+                    <CardAlphabet />
+                    <CardSizes />
+                    <CardBinarySearch />
+                    <CardDuplicates />
+                </div>
 
                 Existen muchos algoritmos para lograr éstos propósitos, y la elección depende de:
                 <ul>
@@ -46,24 +60,24 @@ class Introduction extends Component {
                     <li>Estabilidad</li>
                 </ul>
 
-                <h2>Intercambio de Elementos</h2>
+                <h3>Intercambio de Elementos</h3>
 
                 <p>
-                Nota:
+                    Nota:
                 Una operación muy común en muchos algoritmos es el intercambio de variables.
                 En otras palabas, cuando queremos que la variable A tenga el valor de B y viceversa.
                 La mayoría de los lenguajes de programación (con excepción de Python, y otros) no cuentan con un operador de intercambio, por lo que el intercambio se realiza en 3 pasos:
 
                 codigo:
                 <code>
-                variableTemporal = A
+                        variableTemporal = A
                 A = B
                 B = Variable temporal
                 </code>
-                así, los valores terminan intercambiados.
+                    así, los valores terminan intercambiados.
                 </p>
 
-            </div>
+            </Section>
         )
     }
 }
