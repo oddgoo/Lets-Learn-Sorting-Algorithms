@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import BubbleSortAnimation from './Components/BubbleSortAnimation/index.js';
 class BubbleSort extends Component{
     render(){
         return(
@@ -15,7 +15,7 @@ class BubbleSort extends Component{
                     Nota:
                     Cuando se necesita comparar elementos no númericos, simplemente cambiamos la condición para decidir cual es "Mayor".
 
-
+                    <BubbleSortAnimation/>
                 </p>
             </div>
         )

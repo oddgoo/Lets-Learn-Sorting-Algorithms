@@ -1,0 +1,7 @@
+.BubbleSortAnimation .sortItem{
+    display: inline;
+    font-size: 3em;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
